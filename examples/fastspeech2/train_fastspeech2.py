@@ -33,7 +33,7 @@ import yaml
 from tqdm import tqdm
 
 import tensorflow_tts
-from TensorFlowTTS.examples.fastspeech2.fastspeech2_dataset import CharactorDurationF0EnergyMelDataset
+from examples.fastspeech2.fastspeech2_dataset import CharactorDurationF0EnergyMelDataset
 from examples.fastspeech.train_fastspeech import FastSpeechTrainer
 from tensorflow_tts.configs import FastSpeech2Config
 from tensorflow_tts.models import TFFastSpeech2
