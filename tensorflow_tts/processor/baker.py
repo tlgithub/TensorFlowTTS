@@ -654,7 +654,7 @@ class BakerProcessor(BaseProcessor):
 
     def text_to_sequence(self, text, inference=False):
         if inference:
-            pinyin = self.pinyin_parser(text, style=Style.TONE3, errors="ignore")
+            pinyin = self.pinyin_parser(text, style=Style.TONE3, errors=lambda x: '#3')
             new_pinyin = []
             for x in pinyin:
                 x = "".join(x)
