@@ -610,7 +610,7 @@ class BakerProcessor(BaseProcessor):
                 i += 2
             else:
                 # ignore the unknown char and punctuation
-                # result.append(chn_char[i])
+                result.append(chn_char[i])
                 i += 1
         if result[-1] == "#0":
             result = result[:-1]
